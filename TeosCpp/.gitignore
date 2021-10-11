@@ -1,3 +1,7 @@
+# Do not commit build files
+build/*
+!.gitkeep
+
 # Prerequisites
 *.d
 
