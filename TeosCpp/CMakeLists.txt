@@ -9,7 +9,7 @@ include_directories(
 )
 
 # Add the teos-cpp library
-add_library(teos-cpp
+add_library(teos-cpp SHARED
     src/TeosBase.cpp
     src/TeosSea.cpp
     src/TeosIce.cpp
