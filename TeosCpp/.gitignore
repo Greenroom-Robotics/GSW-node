@@ -1,6 +1,7 @@
 # Do not commit build files
 build/*
 !.gitkeep
+!libteos-cpp.so
 
 # Prerequisites
 *.d
