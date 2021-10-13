@@ -487,6 +487,15 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
+"@mcesystems/nbind@^0.3.18":
+  version "0.3.18"
+  resolved "https://registry.yarnpkg.com/@mcesystems/nbind/-/nbind-0.3.18.tgz#22aaa80268f08112147d6371284e401390a3162a"
+  integrity sha512-gZFv881rT/nTNNl92K97DqbFVECiniEHg4ABle7WFKklQSCge7ILY58otnKvCgoqrrS/9Mv//mTf+2k3MPSGXA==
+  dependencies:
+    emscripten-library-decorator "~0.2.2"
+    mkdirp "~0.5.1"
+    nan "^2.9.2"
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.3.tgz#3802ddd21a50a949b6721ddd72da36e67e7f1b2d"
@@ -2252,15 +2261,6 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
-
-nbind@^0.3.15:
-  version "0.3.15"
-  resolved "https://registry.yarnpkg.com/nbind/-/nbind-0.3.15.tgz#20c74d77d54e28627ab8268c2767f7e40aef8c53"
-  integrity sha512-TrKLNRj5D8wZRJb7XmUNbA1W3iTigAEpm3qaGig5bEWY/iCT2IQBgBc2EUGO59FbRIGhx5hB/McVwqxlSGScVw==
-  dependencies:
-    emscripten-library-decorator "~0.2.2"
-    mkdirp "~0.5.1"
-    nan "^2.9.2"
 
 node-int64@^0.4.0:
   version "0.4.0"
