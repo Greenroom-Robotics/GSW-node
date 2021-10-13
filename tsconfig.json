@@ -15,7 +15,7 @@
     "types": ["jest"],
     "paths": {
       "nbind/dist/shim": ["node_modules/@mcesystems/nbind/dist/shim"]
-    }
+      }
   },
   "include": [
     "lib.ts",
