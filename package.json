@@ -2,9 +2,17 @@
   "name": "gsw-node",
   "version": "1.0.0",
   "description": "Nodejs interface to Gibbs-SeaWater (GSW) Oceanographic Toolbox in C++",
-  "main": "index.js",
+  "main": "./lib.js",
+  "types": "./lib.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "autogypi": "autogypi",
+    "node-gyp": "node-gyp",
+    "emcc-path": "emcc-path",
+    "copyasm": "copyasm",
+    "ndts": "ndts",
+    "test": "jest",
+    "install": "cmake-js -d ./TeosCpp && node-gyp configure build && ndts . > lib-types.d.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -17,6 +25,14 @@
   },
   "homepage": "https://github.com/Greenroom-Robotics/GSW-node#readme",
   "dependencies": {
-
+    "autogypi": "^0.2.2",
+    "cmake-js": "^6.2.1",
+    "nbind": "^0.3.15"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "jest": "^27.2.5",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.3"
   }
 }

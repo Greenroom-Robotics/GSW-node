@@ -8,10 +8,10 @@
 				"TeosBindings.cpp"
 			],
 			"libraries": [
-				"/build/TeosCpp/build/libteos-cpp.a"
+				"<(module_root_dir)/TeosCpp/build/libteos-cpp.a"
 			],
 			"include_dirs":[
-				"../TeosCpp/include"
+				"<(module_root_dir)/TeosCpp/include"
 			]
 		}
 	],
