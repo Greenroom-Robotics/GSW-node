@@ -9,12 +9,13 @@ include_directories(
 )
 
 # Add the teos-cpp library
-add_library(teos-cpp SHARED
+add_library(teos-cpp STATIC
     src/TeosBase.cpp
     src/TeosSea.cpp
     src/TeosIce.cpp
     src/SaarDataHandler.cpp
 )
+set_property(TARGET teos-cpp PROPERTY POSITION_INDEPENDENT_CODE ON)
 
 # Add a test excutable
 add_executable(test-teos
