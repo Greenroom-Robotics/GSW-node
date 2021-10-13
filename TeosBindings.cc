@@ -1,6 +1,7 @@
 #include <iostream>
 #include "TeosSea.h"
 #include "TeosBase.h"
+#include "TeosIce.h"
 
 #include "nbind/nbind.h"
 
@@ -236,4 +237,78 @@ NBIND_CLASS(TeosSea) {
     method(gsw_util_interp1q_int);
     method(gsw_util_linear_interp);
     method(gsw_util_pchip_interp);
+};
+
+NBIND_CLASS(TeosIce){
+    construct<>();
+    method(gsw_adiabatic_lapse_rate_ice);
+    method(gsw_alpha_wrt_t_ice);
+    method(gsw_chem_potential_water_ice);
+    method(gsw_cp_ice);
+    method(gsw_ct_freezing_exact);
+    method(gsw_ct_freezing_first_derivatives);
+    method(gsw_ct_freezing_first_derivatives_poly);
+    method(gsw_ct_freezing_poly);
+    method(gsw_ct_from_rho);
+    method(gsw_deltasa_from_sp);
+    method(gsw_enthalpy_diff);
+    method(gsw_enthalpy_ice);
+    method(gsw_entropy_ice);
+    method(gsw_frazil_properties);
+    method(gsw_frazil_properties_potential);
+    method(gsw_frazil_properties_potential_poly);
+    method(gsw_frazil_ratios_adiabatic);
+    method(gsw_frazil_ratios_adiabatic_poly);
+    method(gsw_geo_strf_dyn_height_pc);
+    method(gsw_gibbs_ice_part_t);
+    method(gsw_gibbs_ice_pt0);
+    method(gsw_gibbs_ice_pt0_pt0);
+    method(gsw_helmholtz_energy_ice);
+    method(gsw_ice_fraction_to_freeze_seawater);
+    method(gsw_internal_energy_ice);
+    method(gsw_ipv_vs_fnsquared_ratio);
+    method(gsw_kappa_const_t_ice);
+    method(gsw_kappa_ice);
+    method(gsw_latentheat_melting);
+    method(gsw_melting_ice_equilibrium_sa_ct_ratio);
+    method(gsw_melting_ice_equilibrium_sa_ct_ratio_poly);
+    method(gsw_melting_ice_into_seawater);
+    method(gsw_melting_ice_sa_ct_ratio);
+    method(gsw_melting_ice_sa_ct_ratio_poly);
+    method(gsw_melting_seaice_equilibrium_sa_ct_ratio);
+    method(gsw_melting_seaice_equilibrium_sa_ct_ratio_poly);
+    method(gsw_melting_seaice_into_seawater);
+    method(gsw_melting_seaice_sa_ct_ratio);
+    method(gsw_melting_seaice_sa_ct_ratio_poly);
+    method(gsw_nsquared);
+    method(gsw_pot_enthalpy_ice_freezing);
+    method(gsw_pot_enthalpy_ice_freezing_first_derivatives);
+    method(gsw_pot_enthalpy_from_pt_ice_poly);
+    method(gsw_pot_enthalpy_from_specvol_ice);
+    // method(gsw_pressure_coefficient_ice);
+    method(gsw_pressure_freezing_ct);
+    method(gsw_pt_from_pot_enthalpy_ice);
+    method(gsw_pt_from_pot_enthalpy_ice_poly);
+    method(gsw_pt_from_pot_enthalpy_ice_poly_dh);
+    method(gsw_pt_from_t_ice);
+    method(gsw_pt0_cold_ice_poly);
+    method(gsw_rho_ice);
+    method(gsw_sa_freezing_estimate);
+    method(gsw_sa_freezing_from_ct);
+    method(gsw_sa_freezing_from_ct_poly);
+    method(gsw_sa_freezing_from_t);
+    method(gsw_sa_freezing_from_t_poly);
+    method(gsw_sa_p_inrange);
+    method(gsw_seaice_fraction_to_freeze_seawater);
+    method(gsw_specvol_from_pot_enthalpy_ice);
+    method(gsw_specvol_ice);
+    method(gsw_sound_speed_ice);
+    method(gsw_pt0_from_t_ice);
+    method(gsw_t_freezing_exact);
+    method(gsw_t_freezing_first_derivatives);
+    method(gsw_t_freezing_first_derivatives_poly);
+    // method(gsw_t_freezing_poly);
+    // method(gsw_t_freezing_poly);
+    method(gsw_t_from_pt0_ice);
+    method(gsw_t_from_rho_ice);
 };

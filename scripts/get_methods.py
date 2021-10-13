@@ -11,7 +11,7 @@ def input_with_prefill(prompt, text):
     readline.set_pre_input_hook()
     return result
 
-file_input = input_with_prefill("File path:", "")
+file_input = input_with_prefill("File path:", "/home/zacpullen/Documents/GSW-node/TeosCpp/include/TeosIce.h")
 
 # Get a list of methods from a header file for use in the bindings
 _keyword = "gsw_"

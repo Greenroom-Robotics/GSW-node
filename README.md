@@ -26,6 +26,9 @@ $ yarn test
 ```
 
 ### Use
+
+Avaliable functions are generated and avaliable in: [lib-types.d.ts](lib-types.d.ts)
+
 The use of gsw_z_from_p is shown in the below example, this is an example from https://www.teos-10.org/pubs/gsw/html/gsw_z_from_p.html
 
 **Note** if you see the definition of gsw_z_from_p in the source code you will notice that there are two optional arguments, in the bindings of this function these defaults do not transfer over, in the following typescript code you can see that these defaults need to be added .
@@ -59,4 +62,31 @@ $ make
 Run very very basic the example code using:
 ```bash
 ./test-teos
+```
+
+## Other notes
+It seems that some of the functions are missing or not complete in the Cpp source code, these are listed below.
+
+### TeosBase
+```c++
+method(gsw_CT_freezing); Not implemented fully in source
+method(gsw_Hill_ratio_at_SP2); Seems to be an error in code, looks like the capitals are different in c++ code. 
+method(gsw_internal_energy_second_derivatives); Not implemented in source
+method(gsw_rho_second_derivatives_wrt_enthalpy_CT_exact); Not implemented in source
+method(gsw_SA_freezing_from_CT_poly); Not implemented in source, only in header definition.
+method(gsw_SSO); Dosent seem to be implemented in c++ code
+```
+
+### TeosSea
+```c++
+method(gsw_geo_strf_dyn_height); # Currently contains errors TODO: Look into @zacpullen
+method(gsw_geo_strf_dyn_height_1);
+method(gsw_linear_interp_SA_CT_for_dh);
+```
+
+### TeosIce
+```c++
+method(gsw_pressure_coefficient_ice);
+method(gsw_t_freezing_poly); // There are two definitions here, this is not compatable with nbind binding. If you need this you can change the funcitons to have different names in the source code. 
+method(gsw_t_freezing_poly); // See above
 ```

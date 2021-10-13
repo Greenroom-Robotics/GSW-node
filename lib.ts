@@ -7,4 +7,6 @@ export const TeosSea = lib.TeosSea;
 
 export const TeosBase = lib.TeosBase;
 
+export const TeosIce = lib.TeosIce;
+
 

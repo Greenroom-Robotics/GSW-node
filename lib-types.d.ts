@@ -439,6 +439,212 @@ export class TeosBase extends NBindBase {
 	gsw_z_from_p(p0: number, p1: number, p2: number, p3: number): number;
 }
 
+export class TeosIce extends NBindBase {
+	/** TeosIce(); */
+	constructor();
+
+	/** float64_t gsw_adiabatic_lapse_rate_ice(float64_t, float64_t); */
+	gsw_adiabatic_lapse_rate_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_alpha_wrt_t_ice(float64_t, float64_t); */
+	gsw_alpha_wrt_t_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_chem_potential_water_ice(float64_t, float64_t); */
+	gsw_chem_potential_water_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_cp_ice(float64_t, float64_t); */
+	gsw_cp_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_ct_freezing_exact(float64_t, float64_t, float64_t); */
+	gsw_ct_freezing_exact(p0: number, p1: number, p2: number): number;
+
+	/** void gsw_ct_freezing_first_derivatives(float64_t, float64_t, float64_t, float64_t *, float64_t *); */
+	gsw_ct_freezing_first_derivatives(p0: number, p1: number, p2: number, p3: number, p4: number): void;
+
+	/** void gsw_ct_freezing_first_derivatives_poly(float64_t, float64_t, float64_t, float64_t *, float64_t *); */
+	gsw_ct_freezing_first_derivatives_poly(p0: number, p1: number, p2: number, p3: number, p4: number): void;
+
+	/** float64_t gsw_ct_freezing_poly(float64_t, float64_t, float64_t); */
+	gsw_ct_freezing_poly(p0: number, p1: number, p2: number): number;
+
+	/** void gsw_ct_from_rho(float64_t, float64_t, float64_t, float64_t *, float64_t *); */
+	gsw_ct_from_rho(p0: number, p1: number, p2: number, p3: number, p4: number): void;
+
+	/** float64_t gsw_deltasa_from_sp(float64_t, float64_t, float64_t, float64_t); */
+	gsw_deltasa_from_sp(p0: number, p1: number, p2: number, p3: number): number;
+
+	/** float64_t gsw_enthalpy_diff(float64_t, float64_t, float64_t, float64_t); */
+	gsw_enthalpy_diff(p0: number, p1: number, p2: number, p3: number): number;
+
+	/** float64_t gsw_enthalpy_ice(float64_t, float64_t); */
+	gsw_enthalpy_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_entropy_ice(float64_t, float64_t); */
+	gsw_entropy_ice(p0: number, p1: number): number;
+
+	/** void gsw_frazil_properties(float64_t, float64_t, float64_t, float64_t *, float64_t *, float64_t *); */
+	gsw_frazil_properties(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number): void;
+
+	/** void gsw_frazil_properties_potential(float64_t, float64_t, float64_t, float64_t *, float64_t *, float64_t *); */
+	gsw_frazil_properties_potential(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number): void;
+
+	/** void gsw_frazil_properties_potential_poly(float64_t, float64_t, float64_t, float64_t *, float64_t *, float64_t *); */
+	gsw_frazil_properties_potential_poly(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number): void;
+
+	/** void gsw_frazil_ratios_adiabatic(float64_t, float64_t, float64_t, float64_t *, float64_t *, float64_t *); */
+	gsw_frazil_ratios_adiabatic(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number): void;
+
+	/** void gsw_frazil_ratios_adiabatic_poly(float64_t, float64_t, float64_t, float64_t *, float64_t *, float64_t *); */
+	gsw_frazil_ratios_adiabatic_poly(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number): void;
+
+	/** float64_t * gsw_geo_strf_dyn_height_pc(float64_t *, float64_t *, float64_t *, int32_t, float64_t *, float64_t *); */
+	gsw_geo_strf_dyn_height_pc(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number): number;
+
+	/** float64_t gsw_gibbs_ice_part_t(float64_t, float64_t); */
+	gsw_gibbs_ice_part_t(p0: number, p1: number): number;
+
+	/** float64_t gsw_gibbs_ice_pt0(float64_t); */
+	gsw_gibbs_ice_pt0(p0: number): number;
+
+	/** float64_t gsw_gibbs_ice_pt0_pt0(float64_t); */
+	gsw_gibbs_ice_pt0_pt0(p0: number): number;
+
+	/** float64_t gsw_helmholtz_energy_ice(float64_t, float64_t); */
+	gsw_helmholtz_energy_ice(p0: number, p1: number): number;
+
+	/** void gsw_ice_fraction_to_freeze_seawater(float64_t, float64_t, float64_t, float64_t, float64_t *, float64_t *, float64_t *); */
+	gsw_ice_fraction_to_freeze_seawater(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number): void;
+
+	/** float64_t gsw_internal_energy_ice(float64_t, float64_t); */
+	gsw_internal_energy_ice(p0: number, p1: number): number;
+
+	/** void gsw_ipv_vs_fnsquared_ratio(float64_t *, float64_t *, float64_t *, float64_t, int32_t, float64_t *, float64_t *); */
+	gsw_ipv_vs_fnsquared_ratio(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number): void;
+
+	/** float64_t gsw_kappa_const_t_ice(float64_t, float64_t); */
+	gsw_kappa_const_t_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_kappa_ice(float64_t, float64_t); */
+	gsw_kappa_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_latentheat_melting(float64_t, float64_t); */
+	gsw_latentheat_melting(p0: number, p1: number): number;
+
+	/** float64_t gsw_melting_ice_equilibrium_sa_ct_ratio(float64_t, float64_t); */
+	gsw_melting_ice_equilibrium_sa_ct_ratio(p0: number, p1: number): number;
+
+	/** float64_t gsw_melting_ice_equilibrium_sa_ct_ratio_poly(float64_t, float64_t); */
+	gsw_melting_ice_equilibrium_sa_ct_ratio_poly(p0: number, p1: number): number;
+
+	/** void gsw_melting_ice_into_seawater(float64_t, float64_t, float64_t, float64_t, float64_t, float64_t *, float64_t *, float64_t *); */
+	gsw_melting_ice_into_seawater(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number): void;
+
+	/** float64_t gsw_melting_ice_sa_ct_ratio(float64_t, float64_t, float64_t, float64_t); */
+	gsw_melting_ice_sa_ct_ratio(p0: number, p1: number, p2: number, p3: number): number;
+
+	/** float64_t gsw_melting_ice_sa_ct_ratio_poly(float64_t, float64_t, float64_t, float64_t); */
+	gsw_melting_ice_sa_ct_ratio_poly(p0: number, p1: number, p2: number, p3: number): number;
+
+	/** float64_t gsw_melting_seaice_equilibrium_sa_ct_ratio(float64_t, float64_t); */
+	gsw_melting_seaice_equilibrium_sa_ct_ratio(p0: number, p1: number): number;
+
+	/** float64_t gsw_melting_seaice_equilibrium_sa_ct_ratio_poly(float64_t, float64_t); */
+	gsw_melting_seaice_equilibrium_sa_ct_ratio_poly(p0: number, p1: number): number;
+
+	/** void gsw_melting_seaice_into_seawater(float64_t, float64_t, float64_t, float64_t, float64_t, float64_t, float64_t *, float64_t *); */
+	gsw_melting_seaice_into_seawater(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number): void;
+
+	/** float64_t gsw_melting_seaice_sa_ct_ratio(float64_t, float64_t, float64_t, float64_t, float64_t); */
+	gsw_melting_seaice_sa_ct_ratio(p0: number, p1: number, p2: number, p3: number, p4: number): number;
+
+	/** float64_t gsw_melting_seaice_sa_ct_ratio_poly(float64_t, float64_t, float64_t, float64_t, float64_t); */
+	gsw_melting_seaice_sa_ct_ratio_poly(p0: number, p1: number, p2: number, p3: number, p4: number): number;
+
+	/** void gsw_nsquared(float64_t *, float64_t *, float64_t *, float64_t *, int32_t, float64_t *, float64_t *); */
+	gsw_nsquared(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number): void;
+
+	/** float64_t gsw_pot_enthalpy_ice_freezing(float64_t, float64_t); */
+	gsw_pot_enthalpy_ice_freezing(p0: number, p1: number): number;
+
+	/** void gsw_pot_enthalpy_ice_freezing_first_derivatives(float64_t, float64_t, float64_t *, float64_t *); */
+	gsw_pot_enthalpy_ice_freezing_first_derivatives(p0: number, p1: number, p2: number, p3: number): void;
+
+	/** float64_t gsw_pot_enthalpy_from_pt_ice_poly(float64_t); */
+	gsw_pot_enthalpy_from_pt_ice_poly(p0: number): number;
+
+	/** float64_t gsw_pot_enthalpy_from_specvol_ice(float64_t, float64_t); */
+	gsw_pot_enthalpy_from_specvol_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_pressure_freezing_ct(float64_t, float64_t, float64_t); */
+	gsw_pressure_freezing_ct(p0: number, p1: number, p2: number): number;
+
+	/** float64_t gsw_pt_from_pot_enthalpy_ice(float64_t); */
+	gsw_pt_from_pot_enthalpy_ice(p0: number): number;
+
+	/** float64_t gsw_pt_from_pot_enthalpy_ice_poly(float64_t); */
+	gsw_pt_from_pot_enthalpy_ice_poly(p0: number): number;
+
+	/** float64_t gsw_pt_from_pot_enthalpy_ice_poly_dh(float64_t); */
+	gsw_pt_from_pot_enthalpy_ice_poly_dh(p0: number): number;
+
+	/** float64_t gsw_pt_from_t_ice(float64_t, float64_t, float64_t); */
+	gsw_pt_from_t_ice(p0: number, p1: number, p2: number): number;
+
+	/** float64_t gsw_pt0_cold_ice_poly(float64_t); */
+	gsw_pt0_cold_ice_poly(p0: number): number;
+
+	/** float64_t gsw_rho_ice(float64_t, float64_t); */
+	gsw_rho_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_sa_freezing_estimate(float64_t, float64_t, float64_t *, float64_t *); */
+	gsw_sa_freezing_estimate(p0: number, p1: number, p2: number, p3: number): number;
+
+	/** float64_t gsw_sa_freezing_from_ct(float64_t, float64_t, float64_t); */
+	gsw_sa_freezing_from_ct(p0: number, p1: number, p2: number): number;
+
+	/** float64_t gsw_sa_freezing_from_ct_poly(float64_t, float64_t, float64_t); */
+	gsw_sa_freezing_from_ct_poly(p0: number, p1: number, p2: number): number;
+
+	/** float64_t gsw_sa_freezing_from_t(float64_t, float64_t, float64_t); */
+	gsw_sa_freezing_from_t(p0: number, p1: number, p2: number): number;
+
+	/** float64_t gsw_sa_freezing_from_t_poly(float64_t, float64_t, float64_t); */
+	gsw_sa_freezing_from_t_poly(p0: number, p1: number, p2: number): number;
+
+	/** int32_t gsw_sa_p_inrange(float64_t, float64_t); */
+	gsw_sa_p_inrange(p0: number, p1: number): number;
+
+	/** void gsw_seaice_fraction_to_freeze_seawater(float64_t, float64_t, float64_t, float64_t, float64_t, float64_t *, float64_t *, float64_t *); */
+	gsw_seaice_fraction_to_freeze_seawater(p0: number, p1: number, p2: number, p3: number, p4: number, p5: number, p6: number, p7: number): void;
+
+	/** float64_t gsw_specvol_from_pot_enthalpy_ice(float64_t, float64_t); */
+	gsw_specvol_from_pot_enthalpy_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_specvol_ice(float64_t, float64_t); */
+	gsw_specvol_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_sound_speed_ice(float64_t, float64_t); */
+	gsw_sound_speed_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_pt0_from_t_ice(float64_t, float64_t); */
+	gsw_pt0_from_t_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_t_freezing_exact(float64_t, float64_t, float64_t); */
+	gsw_t_freezing_exact(p0: number, p1: number, p2: number): number;
+
+	/** void gsw_t_freezing_first_derivatives(float64_t, float64_t, float64_t, float64_t *, float64_t *); */
+	gsw_t_freezing_first_derivatives(p0: number, p1: number, p2: number, p3: number, p4: number): void;
+
+	/** void gsw_t_freezing_first_derivatives_poly(float64_t, float64_t, float64_t, float64_t *, float64_t *); */
+	gsw_t_freezing_first_derivatives_poly(p0: number, p1: number, p2: number, p3: number, p4: number): void;
+
+	/** float64_t gsw_t_from_pt0_ice(float64_t, float64_t); */
+	gsw_t_from_pt0_ice(p0: number, p1: number): number;
+
+	/** float64_t gsw_t_from_rho_ice(float64_t, float64_t); */
+	gsw_t_from_rho_ice(p0: number, p1: number): number;
+}
+
 export class TeosSea extends NBindBase {
 	/** TeosSea(); */
 	constructor();
