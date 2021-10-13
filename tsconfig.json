@@ -12,7 +12,10 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
-    "types": ["jest"]
+    "types": ["jest"],
+    "paths": {
+      "nbind/dist/shim": ["node_modules/@mcesystems/nbind/dist/shim"]
+    }
   },
   "include": [
     "lib.ts",
