@@ -4,12 +4,7 @@
   "description": "Nodejs interface to Gibbs-SeaWater (GSW) Oceanographic Toolbox in C++",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "autogypi": "autogypi",
-    "node-gyp": "node-gyp",
-    "emcc-path": "emcc-path",
-    "copyasm": "copyasm",
-    "install": "autogypi && node-gyp configure build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -22,8 +17,6 @@
   },
   "homepage": "https://github.com/Greenroom-Robotics/GSW-node#readme",
   "dependencies": {
-    "autogypi": "^0.2.2",
-    "nbind": "^0.3.15",
-    "node-gyp": "^8.2.0"
+
   }
 }

@@ -1,0 +1,21 @@
+import { TeosBase } from '../lib'
+
+describe("TeosBase", () => {
+  const teosBase = new TeosBase()
+  describe("gsw_z_from_p", () => {
+    it("matches demo value 1", () => {
+      const p = 10
+      const lat = 4
+      const expectedResult = -0.099445834469453 * 1.0e+002
+      const result = teosBase.gsw_z_from_p(p, lat, 0, 0)
+      expect(result).toBeCloseTo(expectedResult) 
+    })
+    it("matches demo value 2", () => {
+      const p = 50
+      const lat = 4
+      const expectedResult = -0.497180897012550 * 1.0e+002
+      const result = teosBase.gsw_z_from_p(p, lat, 0.0, 0.0)
+      expect(result).toBeCloseTo(expectedResult) 
+    })
+  })
+})

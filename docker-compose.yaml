@@ -8,4 +8,4 @@ services:
       - ./:/build
       - /etc/group:/etc/group:ro
       - /etc/passwd:/etc/passwd:ro
-    user: $USER_ID:$USER_ID
+    # user: $USER_ID:$USER_ID
