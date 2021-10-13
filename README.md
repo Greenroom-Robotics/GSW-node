@@ -19,7 +19,11 @@ Unfortunatly this library is only compatable with Node versions up to 12. It may
 Currently this has only been tested on linux Ubuntu 20. 
 
 ## TeosNode
-TODO: add link to npm package manager
+Install with 
+```bash
+$ npm i gsw-node # or
+$ yarn add gsw-node
+```
 
 If you clone this repo you can install using:
 ```bash 
