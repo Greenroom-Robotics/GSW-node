@@ -4,6 +4,11 @@ Nodejs interface to Gibbs-SeaWater (GSW) Oceanographic Toolbox in C++.
 
 Link to the homepage: [Teos-10.org](https://www.teos-10.org/)
 
+This library includes all modules: 
+- TeosBase
+- TeosIce
+- TeosSea
+
 ## Requirments
 - Node: 12
 - cmake
