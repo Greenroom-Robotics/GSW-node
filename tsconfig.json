@@ -12,7 +12,7 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
-    "types": ["jest"]
+    "types": ["jest", "node"]
   },
   "include": [
     "lib-types.d.ts",

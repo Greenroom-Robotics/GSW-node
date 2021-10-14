@@ -37,6 +37,7 @@
   "homepage": "https://github.com/Greenroom-Robotics/GSW-node#readme",
   "dependencies": {
     "@mcesystems/nbind": "^0.3.18",
+    "@types/node": "^16.10.9",
     "autogypi": "^0.2.2",
     "cmake-js": "^6.2.1",
     "copyfiles": "^2.4.1",
