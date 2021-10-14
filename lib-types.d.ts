@@ -1,4 +1,4 @@
-import { Buffer } from "nbind/dist/shim";
+import { Buffer } from "@mcesystems/nbind/dist/shim";
 
 export class NBindBase { free?(): void }
 
