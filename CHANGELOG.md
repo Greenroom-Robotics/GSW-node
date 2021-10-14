@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.8](https://github.com/Greenroom-Robotics/GSW-node/compare/v1.0.7...v1.0.8) (2021-10-14)
+
+
+### Bug Fixes
+
+* copy dts files to dist on build ([56b41cc](https://github.com/Greenroom-Robotics/GSW-node/commit/56b41cc8892e605a7110de56876897d98bd1ae47))
+
 ### [1.0.7](https://github.com/Greenroom-Robotics/GSW-node/compare/v1.0.6...v1.0.7) (2021-10-14)
 
 
