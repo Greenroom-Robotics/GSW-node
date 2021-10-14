@@ -16,7 +16,7 @@
     "test": "jest",
     "fix-lib-import": "python3 ./scripts/fix_ndts_imports.py",
     "copy-dts": "copyfiles -f lib-types.d.ts dist",
-    "copy-build": "copyfiles ./build/* dist",
+    "copy-build": "cpy ./build/* dist/build --parents",
     "install": "cmake-js -d ./TeosCpp && autogypi && node-gyp configure build && ndts . > lib-types.d.ts && yarn fix-lib-import",
     "build": "tsc",
     "reset-hard": "git clean -dfx && git reset --hard && yarn",
@@ -39,7 +39,8 @@
     "@mcesystems/nbind": "^0.3.18",
     "autogypi": "^0.2.2",
     "cmake-js": "^6.2.1",
-    "copyfiles": "^2.4.1"
+    "copyfiles": "^2.4.1",
+    "cpy-cli": "^3.1.1"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
