@@ -13,6 +13,7 @@ This library includes all modules:
 - Node: 12
 - cmake
 - gcc
+- python (2 or 3)
 
 Unfortunatly this library is only compatable with Node versions up to 12. It may build on later versions but tested working on node 12. 
 
