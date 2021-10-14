@@ -16,13 +16,14 @@
     "test": "jest",
     "fix-lib-import": "python3 ./scripts/fix_ndts_imports.py",
     "copy-dts": "copyfiles -f lib-types.d.ts dist",
+    "copy-build": "copyfiles ./build/* dist",
     "install": "cmake-js -d ./TeosCpp && autogypi && node-gyp configure build && ndts . > lib-types.d.ts && yarn fix-lib-import",
     "build": "tsc",
     "reset-hard": "git clean -dfx && git reset --hard && yarn",
     "version": "standard-version",
     "doc:html": "typedoc ./lib.ts ./lib-types.d.ts --exclude **/*.spec.ts --target ES6 --mode file --out dist/docs",
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d dist/docs",
-    "prepare-release": "run-s reset-hard build copy-dts test doc:html version doc:publish"
+    "prepare-release": "run-s reset-hard build copy-dts copy-build test doc:html version doc:publish"
   },
   "repository": {
     "type": "git",
