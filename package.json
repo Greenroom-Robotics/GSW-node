@@ -16,7 +16,7 @@
     "test": "jest",
     "fix-lib-import": "python3 ./scripts/fix_ndts_imports.py",
     "copy-dts": "copyfiles -f lib-types.d.ts dist",
-    "copy-build": "cpy ./build/* dist/build --parents",
+    "copy-build": "cpy ./build/* dist/ --parents",
     "install": "cmake-js -d ./TeosCpp && autogypi && node-gyp configure build && ndts . > lib-types.d.ts && yarn fix-lib-import",
     "build": "tsc",
     "reset-hard": "git clean -dfx && git reset --hard && yarn",
