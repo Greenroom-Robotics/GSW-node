@@ -21,7 +21,7 @@
     "version": "standard-version",
     "doc:html": "typedoc ./lib.ts ./lib-types.d.ts --exclude **/*.spec.ts --target ES6 --mode file --out dist/docs",
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d dist/docs",
-    "prepare-release": "run-s reset-hard test doc:html version doc:publish"
+    "prepare-release": "run-s reset-hard build test doc:html version doc:publish"
   },
   "repository": {
     "type": "git",
