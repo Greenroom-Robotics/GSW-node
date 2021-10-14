@@ -18,4 +18,14 @@ describe("TeosBase", () => {
       expect(result).toBeCloseTo(expectedResult) 
     })
   })
+  describe("Calculate salinity", () => {
+    it("matches demo value 1", () => {
+      const C = 34.5487;
+      const t = 28.7856;
+      const p = 10;
+      const expectedResult = 20.009869599086951; 
+      const result = teosBase.gsw_sp_from_c(C, t, p);
+      expect(result).toBeCloseTo(expectedResult);
+    })
+  })
 })
