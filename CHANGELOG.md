@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.12](https://github.com/Greenroom-Robotics/GSW-node/compare/v1.0.11...v1.0.12) (2021-10-14)
+
+
+### Bug Fixes
+
+* add dirname to fix binary import ([ebfc0fd](https://github.com/Greenroom-Robotics/GSW-node/commit/ebfc0fd1b2e96eea5e1b31bcd10ca02dc875fbff))
+
 ### [1.0.11](https://github.com/Greenroom-Robotics/GSW-node/compare/v1.0.10...v1.0.11) (2021-10-14)
 
 
