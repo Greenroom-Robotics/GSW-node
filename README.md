@@ -48,7 +48,7 @@ double gsw_z_from_p(double p, double lat, double geo_strf_dyn_height=0.0,
 ```
 
 ```ts
-import { TeosBase } from 'gsw-node'
+import { TeosBase } from 'gsw-node/lib'
 
 const teosBase = new TeosBase()
 const p = 10
