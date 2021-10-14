@@ -1,6 +1,6 @@
 {
   "name": "gsw-node",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Nodejs interface to Gibbs-SeaWater (GSW) Oceanographic Toolbox in C++",
   "main": "./dist/lib.js",
   "types": "./dist/lib.d.ts",
