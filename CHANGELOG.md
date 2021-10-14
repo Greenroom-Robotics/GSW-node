@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.7](https://github.com/Greenroom-Robotics/GSW-node/compare/v1.0.6...v1.0.7) (2021-10-14)
+
+
+### Bug Fixes
+
+* add npmignore to include dist on upload to npm ([fb8f050](https://github.com/Greenroom-Robotics/GSW-node/commit/fb8f05055057710adc3b5e578c093ba540193e6b))
+
 ### [1.0.6](https://github.com/Greenroom-Robotics/GSW-node/compare/v1.0.5...v1.0.6) (2021-10-14)
 
 
