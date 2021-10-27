@@ -29,7 +29,7 @@
     "type": "git",
     "url": "git+https://github.com/Greenroom-Robotics/GSW-node.git"
   },
-  "author": "",
+  "author": "Zac Pullen <zac@greenroomrobotics.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Greenroom-Robotics/GSW-node/issues"
