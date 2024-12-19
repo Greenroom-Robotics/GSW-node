@@ -19,8 +19,8 @@
     "prepack": "pnpm -r prepack",
     "pretest": "pnpm -r build && pnpm -r cmake:release",
     "test": "pnpm -r test",
-    "release:npm": "pnpm --stream -r release --dryRun",
-    "release:git": "semantic-release --extends ./release.config.cjs --dryRun",
+    "release:npm": "pnpm --stream -r release",
+    "release:git": "semantic-release --extends ./release.config.cjs",
     "release": "run-s release:npm release:git"
   },
   "devDependencies": {
