@@ -21,10 +21,7 @@
     "cmake:debug": "run-s cmake:debug:configure cmake:debug:build",
     "build": "run-s cmake:debug:build",
     "test": "run-s build cmake:test",
-    "prepack": "run-s cmake:release:build",
-    "release:reset": "git reset --hard",
-    "release:semantic": "semantic-release --extends ./release.config.cjs",
-    "release": "run-s release:reset release:semantic"
+    "prepack": "run-s cmake:release:build"
   },
   "binary": {
     "napi_versions": [
