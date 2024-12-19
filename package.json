@@ -5,7 +5,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Greenroom-Robotics/GSW-node.git"
+    "url": "git+https://github.com/Greenroom-Robotics/GSW-node.git"
   },
   "author": "Zac Pullen <zac@greenroomrobotics.com>",
   "contributors": [
@@ -15,10 +15,10 @@
     "url": "https://github.com/Greenroom-Robotics/GSW-node/issues"
   },
   "scripts": {
-    "build": "pnpm -r build",
+    "build": "pnpm --stream -r build",
     "prepack": "pnpm -r prepack",
-    "pretest": "pnpm -r build && pnpm -r cmake:release",
-    "test": "pnpm -r test",
+    "pretest": "pnpm --stream -r build && pnpm --stream -r cmake:release",
+    "test": "pnpm --stream -r test",
     "release:npm": "pnpm --stream -r release",
     "release:git": "semantic-release --extends ./release.config.cjs",
     "release": "run-s release:npm release:git"

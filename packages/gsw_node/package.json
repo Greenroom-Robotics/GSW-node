@@ -4,7 +4,7 @@
   "description": "Nodejs interface to Gibbs-SeaWater (GSW) Oceanographic Toolbox in C++",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Greenroom-Robotics/GSW-node.git",
+    "url": "git+https://github.com/Greenroom-Robotics/GSW-node.git",
     "directory": "packages/gsw_node"
   },
   "author": "Blake Rogan <blake.rogan@greenroomrobotics.com>",
@@ -29,7 +29,7 @@
     "build:types": "tsc -p ./tsconfig.json --emitDeclarationOnly",
     "test:jest": "jest",
     "test": "run-s build test:jest",
-    "prepack": "pnpm run build",
+    "prepack": "run-s build",
     "typecheck": "tsc --noEmit",
     "release": "semantic-release --extends ./release.config.cjs"
   },
