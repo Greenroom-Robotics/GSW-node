@@ -12,7 +12,7 @@
     "url": "https://github.com/Greenroom-Robotics/GSW-node/issues"
   },
   "scripts": {
-    "test:jest": "jest",
+    "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
