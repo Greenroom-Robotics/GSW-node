@@ -1,0 +1,9 @@
+dist/
+node_modules/
+.npmrc
+.prettierignore
+.eslintignore
+.gitignore
+Dockerfile
+*.json
+README.md

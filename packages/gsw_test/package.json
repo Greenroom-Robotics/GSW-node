@@ -13,7 +13,11 @@
   },
   "scripts": {
     "test:jest": "jest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier -c .",
+    "format:fix": "prettier -c -w ."
   },
   "peerDependencies": {
     "@greenroom-robotics/gsw_node": "^2.0.0"
@@ -22,14 +26,21 @@
     "@greenroom-robotics/gsw_node": "workspace:*",
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.14",
-    "@types/node": "^20.17.10",
+    "@types/node": "^22.10.2",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
     "tslib": "^2.8.1",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "@greenroom-robotics/eslint-config": "^0.0.5",
+    "eslint": "^8.57.1"
   },
   "engines": {
     "node": ">=20",
     "pnpm": ">=9.15"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@greenroom-robotics/eslint-config/.eslintrc.react"
+    ]
   }
 }

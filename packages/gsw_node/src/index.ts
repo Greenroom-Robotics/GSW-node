@@ -1,3 +1,3 @@
-export {TeosSea} from './teosSea'
-export {TeosIce} from './teosIce'
-export {TeosBase} from './teosBase'
+export * from './teosSea';
+export * from './teosIce';
+export * from './teosBase';

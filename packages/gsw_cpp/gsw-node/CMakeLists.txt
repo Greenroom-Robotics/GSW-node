@@ -10,6 +10,7 @@ add_library(
         ${CMAKE_JS_SRC}
 )
 target_include_directories(gsw-node PRIVATE include)
+target_compile_features(gsw-node PUBLIC cxx_std_20)
 target_link_libraries(gsw-node PRIVATE teos-cpp)
 
 

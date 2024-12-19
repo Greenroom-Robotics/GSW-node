@@ -10,6 +10,7 @@ add_library(
         src/SaarDataHandler.cpp
 )
 target_include_directories(teos-cpp PUBLIC include)
+target_compile_features(teos-cpp PUBLIC cxx_std_20)
 set_property(TARGET teos-cpp PROPERTY POSITION_INDEPENDENT_CODE ON)
 
 add_subdirectory(tests/)

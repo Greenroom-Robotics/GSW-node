@@ -17,6 +17,8 @@
     ]
   },
   "include": [
-    "src"
+    "src",
+    "test",
+    "jest.config.js"
   ]
 }
