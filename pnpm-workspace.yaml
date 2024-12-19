@@ -1,0 +1,4 @@
+packages:
+  - packages/gsw_cpp
+  - packages/gsw_node
+  - packages/gsw_test
