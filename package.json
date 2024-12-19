@@ -5,7 +5,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Greenroom-Robotics/GSW-node.git"
+    "url": "https://github.com/Greenroom-Robotics/GSW-node.git"
   },
   "author": "Zac Pullen <zac@greenroomrobotics.com>",
   "contributors": [

@@ -4,13 +4,10 @@
   "description": "Nodejs interface to Gibbs-SeaWater (GSW) Oceanographic Toolbox in C++",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Greenroom-Robotics/GSW-node.git",
+    "url": "https://github.com/Greenroom-Robotics/GSW-node.git",
     "directory": "packages/gsw_node"
   },
-  "author": "Zac Pullen <zac@greenroomrobotics.com>",
-  "contributors": [
-    "Blake Rogan <blake.rogan@greenroomrobotics.com>"
-  ],
+  "author": "Blake Rogan <blake.rogan@greenroomrobotics.com>",
   "bugs": {
     "url": "https://github.com/Greenroom-Robotics/GSW-node/issues"
   },

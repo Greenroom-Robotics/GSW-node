@@ -4,7 +4,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Greenroom-Robotics/GSW-node.git",
+    "url": "https://github.com/Greenroom-Robotics/GSW-node.git",
     "directory": "packages/gsw_test"
   },
   "author": "Blake Rogan <blake.rogan@greenroomrobotics.com>",
