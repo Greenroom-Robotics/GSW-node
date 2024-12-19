@@ -1,0 +1,51 @@
+{
+  "name": "@greenroom-robotics/gsw_cpp",
+  "version": "2.0.0",
+  "description": "Nodejs interface to Gibbs-SeaWater (GSW) Oceanographic Toolbox in C++",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Greenroom-Robotics/GSW-node.git",
+    "directory": "packages/gsw_cpp"
+  },
+  "author": "Blake Rogan <blake.rogan@greenroomrobotics.com>",
+  "contributors": [
+    "Blake Rogan <blake.rogan@greenroomrobotics.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/Greenroom-Robotics/GSW-node/issues"
+  },
+  "scripts": {
+    "cmake:release:configure": "cmake-js --config Release --parallel --target gsw-node configure",
+    "cmake:release:build": "cmake-js --config Release --parallel --target all compile",
+    "cmake:release": "run-s cmake:release:configure cmake:release:build",
+    "cmake:debug:configure": "cmake-js --config Debug --debug --parallel --target gsw-node configure",
+    "cmake:test": "ctest --stop-on-failure --output-on-failure --parallel --test-dir build/teos-cpp/tests",
+    "cmake:debug:build": "cmake-js --config Debug --debug --parallel --target all compile",
+    "cmake:debug": "run-s cmake:debug:configure cmake:debug:build",
+    "build": "run-s cmake:debug:build",
+    "test": "run-s build cmake:test",
+    "prepack": "run-s cmake:release:build",
+    "release": "semantic-release --extends ./release.config.cjs"
+  },
+  "binary": {
+    "napi_versions": [
+      9
+    ]
+  },
+  "cmake-js": {
+    "runtime": "node"
+  },
+  "devDependencies": {
+    "cmake-js": "^7.3.0",
+    "node-addon-api": "^8.3.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9.15"
+  },
+  "files": [
+    "build/Release/gsw-node.node",
+    "package.json"
+  ]
+}

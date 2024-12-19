@@ -1,0 +1,35 @@
+{
+  "name": "@greenroom-robotics/gsw_test",
+  "version": "2.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Greenroom-Robotics/GSW-node.git",
+    "directory": "packages/gsw_test"
+  },
+  "author": "Blake Rogan <blake.rogan@greenroomrobotics.com>",
+  "bugs": {
+    "url": "https://github.com/Greenroom-Robotics/GSW-node/issues"
+  },
+  "scripts": {
+    "test:jest": "jest",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@greenroom-robotics/gsw_node": "^2.0.0"
+  },
+  "devDependencies": {
+    "@greenroom-robotics/gsw_node": "workspace:*",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.17.10",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9.15"
+  }
+}

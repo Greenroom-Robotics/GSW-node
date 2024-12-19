@@ -1,0 +1,41 @@
+name: Tag & Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Release ${{ github.event.inputs.TAG_NAME }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Greenroom-Robotics/workflow-telemetry-action@main
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: 'true'
+
+      - uses: pnpm/action-setup@v4
+
+      - name: Login to npm github packages
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+          registry-url: https://npm.pkg.github.com
+          scope: '@greenroom-robotics'
+          token: ${{ secrets.API_TOKEN_GITHUB }}
+
+      - name: Install npm dependencies
+        run: pnpm install --frozen-lockfile
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+
+      - name: Release
+        id: release
+        env:
+          GITHUB_USER: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
+          MATRIX_ARCH: ${{ matrix.job.arch }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm run --stream release
