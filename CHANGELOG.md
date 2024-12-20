@@ -1,3 +1,13 @@
+## [4.0.0](https://github.com/Greenroom-Robotics/GSW-node/compare/v3.2.0...v4.0.0) (2024-12-20)
+
+### ⚠ BREAKING CHANGES
+
+* **gsw:** major version
+
+### Features
+
+* **gsw:** major version ([795d54f](https://github.com/Greenroom-Robotics/GSW-node/commit/795d54f05cdbf60ee1787e30d448f7cf6b71050b))
+
 ## [2.0.0](https://github.com/Greenroom-Robotics/GSW-node/compare/v1.0.13...v2.0.0) (2024-12-20)
 
 ### ⚠ BREAKING CHANGES
