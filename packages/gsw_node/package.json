@@ -42,7 +42,7 @@
     ]
   },
   "peerDependencies": {
-    "@greenroom-robotics/gsw_cpp": "^2.0.0"
+    "@greenroom-robotics/gsw_cpp": "*"
   },
   "devDependencies": {
     "@greenroom-robotics/gsw_cpp": "workspace:*",
