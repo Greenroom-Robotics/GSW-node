@@ -49,4 +49,5 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           NPM_TOKEN: ${{ github.token }}
           NODE_AUTH_TOKEN: ${{ github.token }}
+          API_TOKEN_GITHUB: ${{ github.token }}
         run: pnpm run release
