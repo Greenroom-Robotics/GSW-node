@@ -1,6 +1,6 @@
 {
   "name": "@greenroom-robotics/gsw_cpp",
-  "version": "3.3.0",
+  "version": "4.0.0",
   "description": "Nodejs interface to Gibbs-SeaWater (GSW) Oceanographic Toolbox in C++",
   "repository": {
     "type": "git",
